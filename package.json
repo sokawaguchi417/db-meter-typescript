@@ -1,0 +1,33 @@
+{
+  "name": "sound-measure-app",
+  "version": "1.0.0",
+  "description": "An application to measure the sound level in decibels",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rm": "rm -rf docs",
+    "mv": "mv dist docs",
+    "git": "git add . && git commit && git push origin master",
+    "deploy": "npm run rm && npm run build && npm run mv && npm run git",
+    "build": "tsc"
+  },
+  "keywords": [
+    "sound",
+    "measure",
+    "decibel",
+    "node.js",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^16.6.1",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "^16.18.61"
+  }
+  ,
+  "homepage": "https://sokawaguchi417.github.io/db-meter-typescript"
+}
