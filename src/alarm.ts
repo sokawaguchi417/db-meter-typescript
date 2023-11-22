@@ -1,4 +1,4 @@
-import { SoundMeasure } from './soundMeasure';
+import { SoundMeasure } from './soundMeasure.js';
 
 // Alarmクラスの定義
 export class Alarm {

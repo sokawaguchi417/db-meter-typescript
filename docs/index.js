@@ -1,4 +1,3 @@
-"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -8,16 +7,15 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-const soundMeasure_1 = require("./soundMeasure");
-const alarm_1 = require("./alarm");
-const display_1 = require("./display");
+import { SoundMeasure } from './soundMeasure.js';
+import { Alarm } from './alarm.js';
+import { Display } from './display.js';
 class Main {
     constructor() {
         // Initialize SoundMeasure, Alarm, and Display
-        this.soundMeasure = new soundMeasure_1.SoundMeasure();
-        this.alarm = new alarm_1.Alarm(this.soundMeasure, 80);
-        this.display = new display_1.Display(this.soundMeasure, this.alarm);
+        this.soundMeasure = new SoundMeasure();
+        this.alarm = new Alarm(this.soundMeasure, 80);
+        this.display = new Display(this.soundMeasure, this.alarm);
     }
     run() {
         return __awaiter(this, void 0, void 0, function* () {

@@ -1,5 +1,5 @@
-import { SoundMeasure } from './soundMeasure';
-import { Alarm } from './alarm';
+import { SoundMeasure } from './soundMeasure.js';
+import { Alarm } from './alarm.js';
 
 export class Display {
     private soundMeasure: SoundMeasure;

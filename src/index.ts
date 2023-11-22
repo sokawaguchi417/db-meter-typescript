@@ -1,6 +1,6 @@
-import { SoundMeasure } from './soundMeasure';
-import { Alarm } from './alarm';
-import { Display } from './display';
+import { SoundMeasure } from './soundMeasure.js';
+import { Alarm } from './alarm.js';
+import { Display } from './display.js';
 
 class Main {
     private soundMeasure: SoundMeasure;

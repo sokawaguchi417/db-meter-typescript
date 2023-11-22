@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Display = void 0;
-class Display {
+export class Display {
     constructor(soundMeasure, alarm) {
         this.soundMeasure = soundMeasure;
         this.alarm = alarm;
@@ -27,4 +24,3 @@ class Display {
         }
     }
 }
-exports.Display = Display;
