@@ -1,3 +1,4 @@
+"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -7,8 +8,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import { EventEmitter } from 'events';
-export class SoundMeasure extends EventEmitter {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SoundMeasure = void 0;
+const events_1 = require("events");
+class SoundMeasure extends events_1.EventEmitter {
     constructor() {
         super();
         this.minDecibel = Infinity;
@@ -34,3 +37,4 @@ export class SoundMeasure extends EventEmitter {
         return this.maxDecibel;
     }
 }
+exports.SoundMeasure = SoundMeasure;

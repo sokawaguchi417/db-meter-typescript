@@ -1,5 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Alarm = void 0;
 // Alarmクラスの定義
-export class Alarm {
+class Alarm {
     // コンストラクタ
     constructor(soundMeasure, alarmThreshold) {
         // 初期化
@@ -35,3 +38,4 @@ export class Alarm {
         return this.alarmActive;
     }
 }
+exports.Alarm = Alarm;
